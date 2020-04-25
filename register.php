@@ -73,6 +73,11 @@ if(isset($_SESSION['saved'])) { header("Location: login.php"); }
                             </div>
 
                             <div class="input-field">
+                            <input type="text" name="email" id="email" required class="validate">
+                            <label for="email">Email</label>
+                            </div>
+
+                            <div class="input-field">
                             <input type="text" name="username" id="username" required class="validate">
                             <label for="username">Username</label>
                             </div>
@@ -80,11 +85,6 @@ if(isset($_SESSION['saved'])) { header("Location: login.php"); }
                             <div class="input-field">
                             <input type="password" name="password" id="password" required class="validate">
                             <label for="password">Password</label>
-                            </div>
-
-                            <div class="input-field">
-                            <input type="text" name="email" id="email" required class="validate">
-                            <label for="email">Email</label>
                             </div>
 
                             <button name="register" type="submit" class="btn grey darken-1"><i class="material-icons left">book</i>Save</button>

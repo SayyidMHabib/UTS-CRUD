@@ -39,5 +39,12 @@ if(isset($_POST['login'])){
                 </script>";
         }       
     }
+    else{
+        echo "
+            <script type='text/javascript'>
+            alert('Username atau Password Tidak Valid!');
+            history.back(self);
+            </script>";
+    }
 }
 ?>
