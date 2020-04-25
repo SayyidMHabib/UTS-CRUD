@@ -66,32 +66,32 @@
               <h5>Selamat Datang Di Aplikasi Simulator Survey Pendidikan Masyarakat</h5>
                     <h4><?php echo  $_SESSION["user"]["name"] ?></h4>
                     <p><?php echo $_SESSION["user"]["email"] ?></p>
-
+				<div class = "row">
                     <form method="POST" action="insert.php">
                            
                             <h5>Silahkan Isi Form Di Bawah Ini</h5>
 
-                            <div class="input-field">
+                            <div class="input-field col s12">
                             <input type="text" name="name" id="name" required class="validate">
                             <label for="name">Nama Lengkap</label>
                             </div>
 
-                            <div class="input-field">
+                            <div class="input-field col s6">
                             <input type="text" name="tempat_lahir" id="tempat_lahir" required class="validate">
                             <label for="tempat_lahir">Tempat Lahir</label>
                             </div>
 
-                            <div class="input-field">
+                            <div class="input-field col s6">
                             <input type="text" class="datepicker" name="tanggal_lahir" id="tanggal_lahir" required class="validate">
                             <label for="tanggal_lahir">Tanggal Lahir</label>
                             </div>
 
-                            <div class="input-field">
+                            <div class="input-field col s12">
                             <input type="text" name="usia" id="usia" required class="validate">
                             <label for="usia">Usia</label>
                             </div>
 
-                            <div class="input-field">
+                            <div class="input-field col s12">
                               <select type="text" name="pendidikan" id="pendidikan" required class="validate">
                                 <option value="" disabled selected>Choose your option</option>
                                 <option value="Sekolah Dasar (SD/MI)">Sekolah Dasar (SD/MI)</option>
@@ -104,19 +104,20 @@
                               <label for="pendidikan">Pendidikan</label>
                             </div>
 
-                            <div class="input-field">
+                            <div class="input-field col s12">
                             <input type="text" name="email" id="email" required class="validate">
                             <label for="email">Email</label>
                             </div>
 
-                            <div class="input-field">
+                            <div class="input-field col s12">
                             <textarea name="alamat" id="alamat" class="materialize-textarea"></textarea>
                             <label for="alamat">Alamat</label>
                             </div>
 
                             <button type="submit" class="btn grey darken-1" ><i class="material-icons left">book</i>Save</button>
                         
-                    </form>                
+                    </form> 
+				</div>
                   <br>
                   <table class="striped responsive-table highlight">
                     <thead>

@@ -71,33 +71,34 @@ $person = $data -> fetch(PDO :: FETCH_OBJ);
           <div class="parallax"><img src="img/jonatha.jpg"></div>
             <div class="container">
               <div class="card-panel">
+				<div class="row">
                     <form method="POST" action="update.php">
                            
                             <h5>Update Form</h5>
 
                             <input type="hidden" name="id" value="<?php echo $person -> id ?>"/>
 
-                            <div class="input-field">
+                            <div class="input-field col s12">
                             <input type="text" name="name" id="name" required class="validate" value="<?php echo $person -> name ?>">
                             <label for="name"">Nama Lengkap</label>
                             </div>
 
-                            <div class="input-field">
+                            <div class="input-field col s6">
                             <input type="text" name="tempat_lahir" id="tempat_lahir" required class="validate" value="<?php echo $person -> tempat_lahir ?>">
                             <label for="tempat_lahir">Tempat Lahir</label>
                             </div>
 
-                            <div class="input-field">
+                            <div class="input-field col s6">
                             <input type="text" class="datepicker" name="tanggal_lahir" id="tanggal_lahir" required class="validate" value="<?php echo $person -> tanggal_lahir ?>">
                             <label for="tanggal_lahir">Tanggal Lahir</label>
                             </div>
 
-                            <div class="input-field">
+                            <div class="input-field col s12">
                             <input type="text" name="usia" id="usia" required class="validate" value="<?php echo $person -> usia ?>">
                             <label for="usia">Usia</label>
                             </div>
 
-                            <div class="input-field">
+                            <div class="input-field col s12">
                               <select type="text" name="pendidikan" id="pendidikan" required class="validate" value="<?php echo $person -> pendidikan ?>">
                                 <option value="" disabled selected>Choose your option</option>
                                 <option value="Sekolah Dasar (SD/MI)">Sekolah Dasar (SD/MI)</option>
@@ -111,19 +112,20 @@ $person = $data -> fetch(PDO :: FETCH_OBJ);
                             </div>
 
 
-                            <div class="input-field">
+                            <div class="input-field col s12">
                             <input type="text" name="email" id="email" required class="validate" value="<?php echo $person -> email ?>">
                             <label for="email">Email</label>
                             </div>
 
-                            <div class="input-field">
+                            <div class="input-field col s12">
                             <textarea name="alamat" id="alamat" class="materialize-textarea"><?php echo $person -> alamat ?></textarea>
                             <label for="alamat">Alamat</label>
                             </div>
 
                             <button type="submit" class="btn grey darken-1"><i class="material-icons left">book</i>Save</button>
                         
-                    </form>                
+                    </form> 
+				</div>
                   <br>
                   
               </div>
