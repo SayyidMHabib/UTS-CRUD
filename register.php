@@ -63,34 +63,36 @@ if(isset($_SESSION['saved'])) { header("Location: login.php"); }
             <div class="container">
              <div class="register">
               <div class="card-panel center">
+                    <div class="row">
                     <form method="POST" action="server/server_register.php">
                            
                             <h5>Form New a Account</h5>
 
-                            <div class="input-field">
+                            <div class="input-field col s12">
                             <input type="text" name="name" id="name" required class="validate">
                             <label for="name">Nama Lengkap</label>
                             </div>
 
-                            <div class="input-field">
-                            <input type="text" name="email" id="email" required class="validate">
-                            <label for="email">Email</label>
-                            </div>
-
-                            <div class="input-field">
+                            <div class="input-field col s6">
                             <input type="text" name="username" id="username" required class="validate">
                             <label for="username">Username</label>
                             </div>
 
-                            <div class="input-field">
+                            <div class="input-field col s6">
                             <input type="password" name="password" id="password" required class="validate">
                             <label for="password">Password</label>
+                            </div>
+
+                            <div class="input-field col s12">
+                            <input type="email" id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
                             </div>
 
                             <button name="register" type="submit" class="btn grey darken-1"><i class="material-icons left">book</i>Save</button>
                         
                     </form>
-                  
+                  </div>                  
               </div>
              </div>
             </div>

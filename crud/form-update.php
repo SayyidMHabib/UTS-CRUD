@@ -113,8 +113,9 @@ $person = $data -> fetch(PDO :: FETCH_OBJ);
 
 
                             <div class="input-field col s12">
-                            <input type="text" name="email" id="email" required class="validate" value="<?php echo $person -> email ?>">
+                            <input type="email" name="email" id="email" class="validate" value="<?php echo $person -> email ?>">
                             <label for="email">Email</label>
+                            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
                             </div>
 
                             <div class="input-field col s12">
