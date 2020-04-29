@@ -62,7 +62,8 @@ if(isset($_SESSION['user'])) { header("Location: crud/form.php"); }
         <div class="parallax-container">      
           <div class="parallax"><img src="img/form.jpg"></div>
             <div class="container">
-             <div class="login">
+            <div class="row">
+             <div class="login col m8 offset-m2 teal">
               <div class="card-panel center">
                     <form method="POST" action="server/server_login.php">
                            
@@ -84,9 +85,9 @@ if(isset($_SESSION['user'])) { header("Location: crud/form.php"); }
 
                             <p>Belum punya akun? <a href="register.php">Daftar di sini</a></p>
                         
-                    </form>
-                  
+                    </form>                
               </div>
+             </div>
              </div>
             </div>
         </div>

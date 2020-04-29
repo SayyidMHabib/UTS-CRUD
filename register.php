@@ -61,9 +61,9 @@ if(isset($_SESSION['saved'])) { header("Location: login.php"); }
         <div class="parallax-container">      
           <div class="parallax"><img src="img/form.jpg"></div>
             <div class="container">
-             <div class="register">
-              <div class="card-panel center">
-                    <div class="row">
+            <div class="row">
+             <div class="register col m8 offset-m2 teal">
+              <div class="card-panel center">                    
                     <form method="POST" action="server/server_register.php">
                            
                             <h5>Form New a Account</h5>
