@@ -69,11 +69,13 @@ if(isset($_SESSION['user'])) { header("Location: crud/form.php"); }
                             <h5>Form Login</h5>
 
                             <div class="input-field">
+                            <i class="material-icons prefix">account_circle</i>
                             <input type="text" name="username" id="username" required class="validate">
                             <label for="username">Username or Email</label>
                             </div>
 
                             <div class="input-field">
+                            <i class="material-icons prefix">lock</i>
                             <input type="password" name="password" id="password" required class="validate">
                             <label for="password">Password</label>
                             </div>
